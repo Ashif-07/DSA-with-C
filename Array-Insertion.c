@@ -41,6 +41,6 @@ void main()
     printf("\nBefore insertion\n");
     display(arr, size);
     size = insertion(arr, size, index, element, capacity);
-    printf("After insertion\n");
+    printf("After Operation\n");
     display(arr, size);
 }
