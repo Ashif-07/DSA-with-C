@@ -48,9 +48,9 @@ int peek(int index)
     {
         printf("\nStack Is Empty! can't Peek from the stack\n");
     }
-    else if (top-index<0)
+    else if (top-index<0 ||index<0)
     {
-        printf("\nPlease enter the correct index !!!\nAvailable Max Index is %d ",top);
+        printf("\nPlease enter the correct index !!!\nAvailable Max Index is 0 to  %d ",top);
     }
     
     else
@@ -92,6 +92,6 @@ void main()
     // display();
     // pop();
     // peek(top);
-    peek(6);
+    peek(-1);
     display();
 }
