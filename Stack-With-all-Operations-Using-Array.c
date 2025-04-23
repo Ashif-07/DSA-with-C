@@ -48,10 +48,15 @@ int peek(int index)
     {
         printf("\nStack Is Empty! can't Peek from the stack\n");
     }
+    else if (top-index<0)
+    {
+        printf("\nPlease enter the correct index !!!\nAvailable Max Index is %d ",top);
+    }
+    
     else
     {
         int value = stack[index];
-        printf("\n%d is Peeked from the stack\n",value);
+        printf("\n%d is Peeked from %d index the stack\n",value,index);
         return value;
 
     }
@@ -77,15 +82,16 @@ void display()
 void main()
 {
     system("cls");
-    display();
+    // display();
     push(5);
-    push(4);
-    push(3);
-    push(2);
+     push(4);
+     push(3);
+     push(2);
     push(1);
-    display();
-    pop();
-    peek(top);
-    peek(top-1);
+    push(0);
+    // display();
+    // pop();
+    // peek(top);
+    peek(6);
     display();
 }
