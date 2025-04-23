@@ -62,6 +62,15 @@ int peek(int index)
     }
 }
 
+void stacktop()
+{
+    (top == -1) ? printf("Stack is Empty\n") : printf("%d is Top Element of the Stack\n", stack[top]);
+}
+void stackbottom()
+{
+    (top == -1) ? printf("Stack is Empty\n") : printf("%d is Bottom Element of the Stack\n", stack[0]);
+}
+
 void display()
 {
     if (isEmpty(top))
